@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.sideBar {
+    height: 100dvh;
+    width: 250px;
+    background-color: #11101d;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.sideBar.close {
+    width: 60px;
+}
+
+.sideBar .logo i {
+    text-align: start;
+    padding-left: 10px;
+    align-content: center;
+    min-width: 55px;
+}
+
+.sideBar-top h3 {
+    letter-spacing: 1px;
+}
+
+.sideBar.close .sideBar-contianer .sideBar-top,
+.sideBar.close .sideBar-contianer .nav-middle {
+    pointer-events: none;
+}
+
+.sideBar-contianer .toggle-btn {
+    top: 0;
+    right: -40px;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    background-color: #11101d;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sideBar-top .toggle-btn i {
+    transition: all 0.4s;
+}
+
+.sideBar-contianer .toggle-btn i.rotate {
+    transform: rotate(180deg);
+}
+
+.drop-down-link {
+    cursor: pointer;
+}
+
+.drop-down-menu {
+    background-color: hsl(245, 29%, 18%);
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.3s ease-in-out;
+}
+
+.drop-down-menu.show{
+    grid-template-rows: 1fr;
+}
+
+.drop-down-menu ul li {
+    cursor: pointer;
+}
